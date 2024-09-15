@@ -1,0 +1,274 @@
+import Boxes from "./components/common/Boxes";
+import PortfolioPic from "./assets/Pic 3.jpg";
+import Css from './assets/css-3-svgrepo-com.svg';
+import Javascript from './assets/javascript-svgrepo-com.svg';
+import Python from './assets/python-svgrepo-com.svg';
+import Html from './assets/html-5-svgrepo-com.svg';
+import Mongodb from './assets/mongodb-svgrepo-com.svg';
+import Sql from './assets/sql-svgrepo-com.svg';
+import PowerBI from './assets/powerbi-svgrepo-com.svg';
+import Tableau from './assets/tableau-icon-svgrepo-com.svg';
+import Jupyter from './assets/jupyter-svgrepo-com (1).svg';
+import TensorFlow from './assets/tensorflow-svgrepo-com.svg';
+import react from './assets/react-svgrepo-com.svg';
+import Keras from './assets/Keras.svg';
+import Ubuntu from './assets/ubuntu-svgrepo-com.svg';
+import Vscode from './assets/vscode-svgrepo-com.svg';
+import flask from './assets/flask-svgrepo-com.svg';
+import Tailwindcss from './assets/tailwindcss-icon-svgrepo-com.svg';
+import git from './assets/git-svgrepo-com.svg';
+import github from './assets/github-fill-svgrepo-com.svg';
+import Flag from './assets/Flag_of_India.svg';
+import { ReactLenis } from 'lenis/react';
+import { useEffect } from "react";
+import gsap from 'gsap';
+import { useRef } from "react";
+import Timeline from './components/common/Timeline';
+
+const App = () => {
+  const lenisRef = useRef(null);
+
+  useEffect(() => {
+    const update = (time) => {
+      lenisRef.current?.lenis?.raf(time * 1000);
+    };
+
+    gsap.ticker.add(update);
+
+    return () => {
+      gsap.ticker.remove(update);
+    };
+  }, []);
+
+  const skills = [
+    {
+      icon: Css,
+      name: "css",
+      info: "CSS 3"
+    },
+    {
+      icon: Python,
+      name: "python",
+      info: "Python"
+    },
+    {
+      icon: Html,
+      name: "html",
+      info: "HTML 5"
+    },
+    {
+      icon: Javascript,
+      name: "javascript",
+      info: "Javascript"
+    },
+    {
+      icon: Mongodb,
+      name: "mongodb",
+      info: "MongoDb"
+    },
+    {
+      icon: Keras,
+      name: "keras",
+      info: "Keras"
+    },
+    {
+      icon: TensorFlow,
+      name: "tensorflow",
+      info: "Tensorflow"
+    },
+    {
+      icon: Sql,
+      name: "sql",
+      info: "SQL Databases"
+    },
+    {
+      icon: Vscode,
+      name: "vscode",
+      info: "Vscode"
+    },
+    {
+      icon: Ubuntu,
+      name: "ubuntu",
+      info: "Ubuntu"
+    },
+    {
+      icon: Jupyter,
+      name: "jupyter",
+      info: "Jupyter"
+    },
+    {
+      icon: Tailwindcss,
+      name: "tailwindcss",
+      info: "Tailwindcss"
+    },
+    {
+      icon: flask,
+      name: "flask",
+      info: "Flask"
+    },
+    {
+      icon: PowerBI,
+      name: "powerbi",
+      info: "Power Bi"
+    },
+    {
+      icon: react,
+      name: "react",
+      info: "React.js"
+    },
+    {
+      icon: Tableau,
+      name: "tableau",
+      info: "Tableau"
+    },
+    {
+      icon: git,
+      name: "git",
+      info: "Git"
+    },
+    {
+      icon: github,
+      name: "github",
+      info: "Github"
+    },
+  ];
+
+  const events = [
+    {
+      title: 'Started Learning Python',
+      description: 'Began learning the fundamentals of Python in September 2021.',
+      date: 'September 2021',
+    },
+    {
+      title: 'Started Machine Learning',
+      description: "Began Learning the fundamentals of Machine Learning in January 2022",
+      date: 'January 2022',
+    },
+    
+    {
+      title: 'Started Deep Learning',
+      description: "Began Learning the fundamentals of Deep Learning, a subset of Machine Learning, in July 2023",
+      date: 'July 2023',
+    },
+    {
+      title: 'Completed First Project',
+      description: 'Built my first Deep Learning Project: A Tkinter-based Skin cancer detection in August 2023.',
+      date: 'August 2023',
+    },
+  ];
+
+  const currentTime = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+
+  return (
+    <>
+      <ReactLenis ref={lenisRef} autoRaf={false} root>
+        <div className="custom-scrollbar">
+          <div className="grid grid-rows-4 gap-5 m-5 justify-center">
+            <Boxes className="border-2 row-start-3 border-gray-600 bg-secondary rounded-md">
+              <h1 className="font-merriweather m-3 text-xl font-bold">About me</h1>
+              <p className="text-primary font-merriweather text-sm m-3">Hey there, I’m Johin, an AI and software development enthusiast with a passion for solving complex problems. With experience in creating intelligent solutions and optimizing user experiences, I’m here to turn your ideas into reality through innovative technologies. Let’s build something amazing together!</p>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 rounded-md">
+              <div className="flex flex-col h-full">
+                <div className="flex flex-col p-6">
+                <span className="text-secondary text-4xl font-bold">Johin</span> 
+                <span className="text-4xl font-bold">Johny</span>
+                </div>
+
+                <div className="self-end inline-flex flex-col justify-end items-start h-full p-4">
+                  <p className="text-xs">Born in </p>
+                  <p className="flex">Mumbai <img src={Flag} alt="indian flag" className="size-6 ml-2" /></p>
+                  <p className="">{currentTime} IST</p>
+                </div>
+              </div>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 rounded-md">
+              <img src={PortfolioPic} alt="Picture" />
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 rounded-md"/> {/* Empty Container */}
+            <Boxes className="border-2 border-gray-600 row-span-1 rounded-md">
+              <div className="h-full">
+                <h1 className="text-secondary text-2xl font-bold m-4">Timeline</h1>
+                <div className="p-4">
+                    <Timeline events={events}/>
+                </div>
+                
+              </div>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 row-span-1 rounded-md"> {/* Empty Container */}
+              <div>
+                Hello world
+              </div>
+            </Boxes>
+          </div>
+
+          <div className="grid gap-5 m-5">
+            <Boxes className="bg-secondary border-2 border-gray-600 rounded-md h-full overflow-y-scroll">
+              <div className="flex flex-col max-h-72">
+                <h1 className="text-primaryAccent-light font-bold font-merriweather p-3 text-4xl">Featured Project</h1>
+                <ol className="list-decimal pl-5 pr-3 text-primaryAccent-light">
+                  <li className="leading-6">
+                    <h1 className="font-semibold text-primaryAccent-light">Skin Cancer Detection with CNN</h1>
+                    <p className="pt-3">Built a skin cancer detection model using convolutional neural networks (CNNs) to classify melanoma and non-melanoma skin lesions. Integrated the model into a user-friendly GUI, enabling users to upload images and receive real-time predictions.</p>
+                    <p className="underline font-semibold"><a href="https://github.com/Johin2/Projects/blob/main/skin-cancer-identification.ipynb">Github</a></p>
+                  </li>
+                  <li className="mt-5">
+                    <h1 className="font-semibold">Book Recommender Website</h1>
+                    <p className="pt-2">Developed a book recommendation platform using collaborative filtering techniques, providing personalized book suggestions based on user preferences. This project features a Flask backend and smooth data integration for efficient recommendations.</p>
+                    <p className="underline font-semibold"><a href="https://github.com/Johin2/Book-Recommender-Project">Github</a></p>
+                  </li>
+                </ol>
+              </div>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 rounded-md overflow-y-scroll">
+              <div className="text-secondary max-h-72">
+                <h1 className="text-4xl font-merriweather p-3">Experience</h1>
+                <div className="flex flex-col p-5">
+                  <h3 className="font-bold">Software Developer Intern | Augle AI</h3>
+                  <p className="font-semibold pt-2">May 2024 – October 2024</p>
+                  <p className="pt-5">During my time at Augle AI, I worked on building intelligent AI-based solutions. My most significant contribution was developing a Retrieval-Augmented Generation (RAG) application, which utilized Langchain, PromptLayer, and OpenAI API to create a chatbot capable of answering questions based on product data. This involved scraping over 2,000 product details using Scrapy, cleaning and normalizing the data, and then transforming it to be processed by large language models (LLMs) for accurate responses. I also engineered prompts for optimal chatbot performance and integrated the solution with a React.js frontend for a seamless user experience.</p>
+                  <p className="font-semibold py-3">Key Achivements</p>
+                  <ul className="list-disc p-3">
+                    <li>Successfully scraped and processed 2,000+ product details for chatbot training.</li>
+                    <li>Built a chatbot capable of real-time product-related question answering.</li>
+                    <li>Optimized prompt responses using OpenAI’s API, enhancing chatbot performance.</li>
+                    <li>Collaborated with the frontend team to integrate the AI model into the React.js interface.</li>
+                  </ul>
+                </div>
+                <div className="flex flex-col p-2">
+                  <h3 className="font-bold">Data Science Intern | Code Clause</h3>
+                  <p className="font-semibold pt-2">August 2023 – September 2023</p>
+                  <p className="pt-5">At Code Clause, I focused on machine learning and data science projects that showcased my skills in image processing and model development. One of my key projects was developing a Brain Tumor Detection system using convolutional neural networks (CNNs). This project aimed to identify brain tumors from MRI scans with high accuracy. Additionally, I worked on a Color Detection project that used K-Means clustering for color segmentation. Both projects were deployed using Streamlit, making them accessible as web applications for users to explore.</p>
+                  <p className="font-semibold py-3">Key Achivements</p>
+                  <ul className="list-disc p-3">
+                    <li >Developed a CNN-based brain tumor detection system...</li>
+                    <li>Implemented K-Means clustering for precise color detection...</li>
+                    <li>Created interactive web applications with Streamlit for end-user interaction...</li>
+                  </ul>
+                </div>
+              </div>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 rounded-md">
+              <div className="max-h-72 max-w-auto overflow-auto">
+                <h1 className="font-bold text-3xl self-center ml-6">Skills</h1>
+                <div className="grid grid-cols-2  gap-2 h-full items-center justify-center p-3">
+                  {skills.map((skill, index) => (
+                    <div key={index} className="col-span-1 row-span-1 p-0 border-2 rounded-md flex hover:translate-y-1 hover:translate-x-1">
+                      <img src={skill.icon} alt={skill.name} className="bg-white size-10 p-1"/>
+                      <div className="h-auto w-full flex items-center">
+                        <h1 className="text-white text-sm pl-1">{skill.info}</h1>
+                      </div>
+                      
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Boxes>
+          </div>
+        </div>
+      </ReactLenis>
+    </>
+  );
+};
+
+export default App;
