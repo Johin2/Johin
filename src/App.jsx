@@ -24,6 +24,8 @@ import { useEffect } from "react";
 import gsap from 'gsap';
 import { useRef } from "react";
 import Timeline from './components/common/Timeline';
+import linkedin from './assets/icons8-linkedin-48.svg'
+import instagram from './assets/icons8-instagram.svg'
 
 const App = () => {
   const lenisRef = useRef(null);
@@ -193,15 +195,15 @@ const App = () => {
             </Boxes>
             <Boxes className="border-2 border-gray-600 rounded-md">
               <div className="flex flex-col h-full">
-                <div className="flex flex-col p-6">
+                <div className="flex flex-col p-6 lg:pt-3">
                 <span className="text-secondary text-4xl md:text-3xl font-bold">Johin</span> 
                 <span className="text-4xl md:text-3xl font-bold">Johny</span>
                 </div>
 
-                <div className="self-end inline-flex flex-col justify-end items-start h-full p-4">
+                <div className="self-end inline-flex flex-col justify-end items-start h-full p-4 lg:pt-0 lg:pb-3 lg:pr-6">
                   <p className="text-xs">Born in </p>
-                  <p className="flex">Mumbai <img src={Flag} alt="indian flag" className="size-6 ml-2" /></p>
-                  <p className="">{currentTime} IST</p>
+                  <p className="flex md:text-md">Mumbai <img src={Flag} alt="indian flag" className="size-6 ml-2" /></p>
+                  <p className="md:text-sm">{currentTime} IST</p>
                 </div>
               </div>
             </Boxes>
@@ -278,7 +280,7 @@ const App = () => {
             </Boxes>
           </div>
 
-          <div className="grid gap-5 mx-5 mt-2 lg:mt-5 md:grid-cols-2 lg:grid-cols-4 lg:h-screen lg:gap-10">
+          <div className="grid gap-5 mx-5 mt-2 lg:mt-10 md:grid-cols-2 lg:grid-cols-4 lg:h-screen lg:gap-10">
             <Boxes className="bg-secondary border-2 border-gray-600 rounded-md h-full overflow-y-scroll lg:overflow-hidden lg:row-span-1 lg:col-span-2 lg:gap-10">
               <div className="flex flex-col max-h-72">
                 <h1 className="text-primaryAccent-light font-bold font-merriweather p-3 text-4xl">Featured Project</h1>
@@ -338,6 +340,36 @@ const App = () => {
                   ))}
                 </div> 
             </Boxes>
+          </div>
+
+          <div className="grid md:grid-cols-2 md:mt-10 m-5">
+            <Boxes className="border-2 border-gray-600 rounded-md md:col-span-2 lg:col-span-4 bg-secondary text-primary">
+              <div className="flex flex-col md:flex-row justify-around">
+                <div className="m-5">
+                  <h1 className="text-primary font-bold text-2xl lg:text-4xl mb-3">Contact Me</h1>
+                  <ul className="space-y-3">
+                    <li>
+                      <h1 className="font-semibold text-2xl">Phone No.</h1>
+                      <h3 className="text-xl lg:text-3xl">+91 9653650060</h3>
+                    </li>
+                    <li>
+                      <h1 className="text-2xl font-semibold">Email</h1>
+                      <p className="text-xl lg:text-3xl">Johinjohny144@gmail.com</p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="ml-5 md:m-5">
+                  <h1 className="font-bold text-2xl lg:text-4xl mb-3">Social handles</h1>
+                  <ul className="space-y-3 mb-3 flex flex-col">
+                    <li><a href="https://github.com/Johin2" className="underline flex items-center lg:text-2xl font-semibold">Github <img src={github} alt="Github" className="size-12"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/johin/" className="underline flex items-center lg:text-2xl font-semibold">LinkedIn <img src={linkedin} alt="Linkedin logo" /></a></li>
+                    <li><a href="https://www.instagram.com/johin_714/" className="underline flex items-center lg:text-2xl font-semibold">Instagram <img src={instagram} alt="Instagram" /></a></li>
+                  </ul>
+                </div>
+              </div>
+              
+            </Boxes>
+
           </div>
       </ReactLenis>
     </>
