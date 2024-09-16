@@ -154,6 +154,21 @@ const App = () => {
       description: 'Built my first Deep Learning Project: A Tkinter-based Skin cancer detection in August 2023.',
       date: 'August 2023',
     },
+    {
+      title: 'Started Learning Javascript',
+      description: 'Started learning Javascript, in March 2024',
+      date: 'March 2024',
+    },
+    {
+      title: 'Started Learning React.Js',
+      description: 'Started learning React.Js, in July 2024',
+      date: 'July 2024',
+    },
+    {
+      title: 'Created Portfolio',
+      description: 'Created my personalized portfolio using React.js and Tailwindcss, in September 2024',
+      date: 'September 2024',
+    },
   ];
 
   const currentTime = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
