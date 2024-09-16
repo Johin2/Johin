@@ -150,14 +150,24 @@ const App = () => {
       date: 'July 2023',
     },
     {
+      title: "First Internship",
+      description: "Got my first internship from Code Clause",
+      date: "August 2023"
+    },
+    {
       title: 'Completed First Project',
       description: 'Built my first Deep Learning Project: A Tkinter-based Skin cancer detection in August 2023.',
-      date: 'August 2023',
+      date: 'November 2023',
     },
     {
       title: 'Started Learning Javascript',
       description: 'Started learning Javascript, in March 2024',
-      date: 'March 2024',
+      date: 'February 2024',
+    },
+    {
+      title: "Second Internship",
+      description: "Got my second internship from Augle AI",
+      date: "March 2024"
     },
     {
       title: 'Started Learning React.Js',
@@ -167,7 +177,7 @@ const App = () => {
     {
       title: 'Created Portfolio',
       description: 'Created my personalized portfolio using React.js and Tailwindcss, in September 2024',
-      date: 'September 2024',
+      date: 'SeptembeR 2024',
     },
   ];
 
