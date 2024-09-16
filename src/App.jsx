@@ -144,7 +144,6 @@ const App = () => {
       description: "Began Learning the fundamentals of Machine Learning in January 2022",
       date: 'January 2022',
     },
-    
     {
       title: 'Started Deep Learning',
       description: "Began Learning the fundamentals of Deep Learning, a subset of Machine Learning, in July 2023",
@@ -162,17 +161,16 @@ const App = () => {
   return (
     <>
       <ReactLenis ref={lenisRef} autoRaf={false} root>
-        <div className="custom-scrollbar">
-          <div className="grid grid-rows-4 gap-5 m-5 justify-center">
-            <Boxes className="border-2 row-start-3 border-gray-600 bg-secondary rounded-md">
-              <h1 className="font-merriweather m-3 text-xl font-bold">About me</h1>
-              <p className="text-primary font-merriweather text-sm m-3">Hey there, I’m Johin, an AI and software development enthusiast with a passion for solving complex problems. With experience in creating intelligent solutions and optimizing user experiences, I’m here to turn your ideas into reality through innovative technologies. Let’s build something amazing together!</p>
+          <div className="custom-scrollbar mt-5 grid grid-rows-4 grid-cols-1 gap-5 mx-5 justify-center md:grid-cols-2 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-3 lg:gap-10 lg:h-screen">
+            <Boxes className="border-2 row-start-3 md:row-start-2 md:row-span-1 border-gray-600 bg-secondary rounded-md lg:col-start-3 lg:row-start-1 lg:col-span-2 lg:row-span-2">
+              <h1 className="font-merriweather m-5 font-bold text-xl md:text-4xl lg:text-7xl">About me</h1>
+              <p className="text-primary font-merriweather text-lg mx-4 md:text-xl md:h-full lg:text-3xl">Hey there, I’m Johin, an AI and software development enthusiast with a passion for solving complex problems. With experience in creating intelligent solutions and optimizing user experiences, I’m here to turn your ideas into reality through innovative technologies. Let’s build something amazing together!</p>
             </Boxes>
             <Boxes className="border-2 border-gray-600 rounded-md">
               <div className="flex flex-col h-full">
                 <div className="flex flex-col p-6">
-                <span className="text-secondary text-4xl font-bold">Johin</span> 
-                <span className="text-4xl font-bold">Johny</span>
+                <span className="text-secondary text-4xl md:text-3xl font-bold">Johin</span> 
+                <span className="text-4xl md:text-3xl font-bold">Johny</span>
                 </div>
 
                 <div className="self-end inline-flex flex-col justify-end items-start h-full p-4">
@@ -182,28 +180,81 @@ const App = () => {
                 </div>
               </div>
             </Boxes>
-            <Boxes className="border-2 border-gray-600 rounded-md">
-              <img src={PortfolioPic} alt="Picture" />
+            <Boxes className="hidden lg:flex lg:flex-col lg:justify-around lg:items-center border-2 border-gray-600 rounded-md row-start-2">
+              <div className="flex flex-col justify-center">
+                <h1 className="text-secondary font-bold text-2xl">Download Resume</h1>
+              </div>
+              <a href="./assets/Resume_Johin.pdf" download='Resume_Johin.pdf'>
+                <button className="bg-secondaryAccent-light p-2 rounded-sm text-primary font-semibold">
+                  Download
+                </button>
+              </a>
             </Boxes>
-            <Boxes className="border-2 border-gray-600 rounded-md"/> {/* Empty Container */}
-            <Boxes className="border-2 border-gray-600 row-span-1 rounded-md">
+            <Boxes className="border-2 border-gray-600 rounded-md md:w-full md:h-full md:row-span-1 md:col-span-1 lg:row-span-2">
+              <img src={PortfolioPic} alt="Picture" className="object-cover w-full h-full "/>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 row-span-1 rounded-md lg:col-span-1 overflow-y-auto lg:row-start-3 lg:row-span-2">
+              <div className="m-5">
+                <h1 className="text-secondary font-bold font-merriweather text-2xl ">Education</h1>
+                <ul className="list-disc pl-5 pt-3 space-y-3">
+                  <li>
+                    <h1 className="text-secondary font-bold">SSC</h1>
+                    <p>Completed my SSC in 2020</p>
+                    <p className="text-secondary text-sm">Achieved: 67%</p>
+                  </li>
+                  <li>
+                    <h1 className="text-secondary font-bold">HSC</h1>
+                    <p>Completed my Hsc in 2022</p>
+                    <p className="text-secondary text-sm">Achieved: 69%</p>
+                  </li>
+                  <li>
+                    <h1 className="text-secondary font-bold">Bachelors in Computer Science</h1>
+                    <p>Current Pursuing my Bachelors in computer science (hons.) in Artificial Intelligence and Machine Learning</p>
+                    <p className="text-secondary text-sm">Currently: 9.3 CGPA</p>
+                  </li>
+                </ul>
+              </div>
+            </Boxes>
+            <Boxes className="border-2 border-gray-600 max-h-96 md:h-full row-span-1 rounded-md lg:row-start-3 lg:col-start-2 lg:col-span-2 lg:row-span-2 overflow-y-scroll">
               <div className="h-full">
-                <h1 className="text-secondary text-2xl font-bold m-4">Timeline</h1>
+                <h1 className="text-secondary text-2xl md:text-4xl font-bold mt-4 ml-4 font-merriweather">Timeline</h1>
                 <div className="p-4">
                     <Timeline events={events}/>
                 </div>
                 
               </div>
             </Boxes>
-            <Boxes className="border-2 border-gray-600 row-span-1 rounded-md"> {/* Empty Container */}
-              <div>
-                Hello world
+            <Boxes className="border-2 border-gray-600 max-h-96 md:h-full row-span-1 rounded-md lg:col-span-1 overflow-y-scroll lg:row-start-3 lg:w-full lg:row-span-2">
+              <div className="p-4 h-full">
+                <h1 className="text-secondary text-2xl font-bold font-merriweather">Certifications</h1>
+                <ul className="list-disc p-5 space-y-3">
+                  <li>
+                    <h3 className="font-semibold text-secondary">How Google does Machine Learning</h3>
+                    <p className="text-sm pt-2">Provider: Google(Coursera)</p>
+                  </li>
+                  <li>
+                    <h3 className="text-secondary font-semibold">Azure AI Fundamentals</h3>
+                    <p>Provider: Microsoft</p>
+                  </li>
+                  <li>
+                    <h3 className="text-secondary font-semibold">Azure Data Fundamentals</h3>
+                    <p>Provider: Microsoft</p>
+                  </li>
+                  <li>
+                    <h3 className="text-secondary font-semibold">Convolutional Neural networks with Tensorflow</h3>
+                    <p>Provider: Microsoft</p>
+                  </li>
+                  <li>
+                    <h3 className="text-secondary font-semibold">Introduction to Git and Github</h3>
+                    <p>Provider: Microsoft</p>
+                  </li>
+                </ul>
               </div>
             </Boxes>
           </div>
 
-          <div className="grid gap-5 m-5">
-            <Boxes className="bg-secondary border-2 border-gray-600 rounded-md h-full overflow-y-scroll">
+          <div className="grid gap-5 mx-5 mt-2 lg:mt-5 md:grid-cols-2 lg:grid-cols-4 lg:h-screen lg:gap-10">
+            <Boxes className="bg-secondary border-2 border-gray-600 rounded-md h-full overflow-y-scroll lg:overflow-hidden lg:row-span-1 lg:col-span-2 lg:gap-10">
               <div className="flex flex-col max-h-72">
                 <h1 className="text-primaryAccent-light font-bold font-merriweather p-3 text-4xl">Featured Project</h1>
                 <ol className="list-decimal pl-5 pr-3 text-primaryAccent-light">
@@ -220,7 +271,7 @@ const App = () => {
                 </ol>
               </div>
             </Boxes>
-            <Boxes className="border-2 border-gray-600 rounded-md overflow-y-scroll">
+            <Boxes className="border-2 border-gray-600 rounded-md overflow-y-scroll lg:col-span-2">
               <div className="text-secondary max-h-72">
                 <h1 className="text-4xl font-merriweather p-3">Experience</h1>
                 <div className="flex flex-col p-5">
@@ -235,7 +286,7 @@ const App = () => {
                     <li>Collaborated with the frontend team to integrate the AI model into the React.js interface.</li>
                   </ul>
                 </div>
-                <div className="flex flex-col p-2">
+                <div className="flex flex-col p-3">
                   <h3 className="font-bold">Data Science Intern | Code Clause</h3>
                   <p className="font-semibold pt-2">August 2023 – September 2023</p>
                   <p className="pt-5">At Code Clause, I focused on machine learning and data science projects that showcased my skills in image processing and model development. One of my key projects was developing a Brain Tumor Detection system using convolutional neural networks (CNNs). This project aimed to identify brain tumors from MRI scans with high accuracy. Additionally, I worked on a Color Detection project that used K-Means clustering for color segmentation. Both projects were deployed using Streamlit, making them accessible as web applications for users to explore.</p>
@@ -248,12 +299,11 @@ const App = () => {
                 </div>
               </div>
             </Boxes>
-            <Boxes className="border-2 border-gray-600 rounded-md">
-              <div className="max-h-72 max-w-auto overflow-auto">
-                <h1 className="font-bold text-3xl self-center ml-6">Skills</h1>
-                <div className="grid grid-cols-2  gap-2 h-full items-center justify-center p-3">
+            <Boxes className="border-2 border-gray-600 rounded-md md:col-span-2 lg:col-span-4 lg:flex lg:w-full lg:h-full lg:flex-col overflow-y-scroll lg:overflow-hidden">
+                <h1 className="font-bold text-3xl ml-6">Skills</h1>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-full items-center justify-center p-2 lg:gap-2 lg:grid-cols-7">
                   {skills.map((skill, index) => (
-                    <div key={index} className="col-span-1 row-span-1 p-0 border-2 rounded-md flex hover:translate-y-1 hover:translate-x-1">
+                    <div key={index} className="col-span-1 row-span-1 border-2 rounded-md flex hover:translate-y-1 hover:translate-x-1">
                       <img src={skill.icon} alt={skill.name} className="bg-white size-10 p-1"/>
                       <div className="h-auto w-full flex items-center">
                         <h1 className="text-white text-sm pl-1">{skill.info}</h1>
@@ -261,11 +311,9 @@ const App = () => {
                       
                     </div>
                   ))}
-                </div>
-              </div>
+                </div> 
             </Boxes>
           </div>
-        </div>
       </ReactLenis>
     </>
   );
