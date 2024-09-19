@@ -211,7 +211,7 @@ const App = () => {
               <div className="flex flex-col justify-center">
                 <h1 className="text-secondary font-bold text-2xl">Download Resume</h1>
               </div>
-              <a href="./assets/Resume_Johin.pdf" download='Resume_Johin.pdf'>
+              <a href="./assets/Resume_Johin.pdf" download='Resume_Johin.pdf' className="hover:-translate-y-2">
                 <button className="bg-secondaryAccent-light p-2 rounded-sm text-primary font-semibold">
                   Download
                 </button>
