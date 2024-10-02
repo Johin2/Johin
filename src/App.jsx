@@ -21,7 +21,6 @@ import github from './assets/github-fill-svgrepo-com.svg';
 import Flag from './assets/Flag_of_India.svg';
 import { ReactLenis } from 'lenis/react';
 import { useEffect, useState } from "react";
-import axios from 'axios'
 import gsap from 'gsap';
 import { useRef } from "react";
 import Timeline from './components/common/Timeline';
@@ -30,56 +29,6 @@ import instagram from './assets/icons8-instagram.svg'
 
 const App = () => {
   const lenisRef = useRef(null);
-
-  const BASE_URL ="https://api.countapi.xyz"
-
-  const namespace = "johin-portfolio"
-  const key = "visits"
-
-  const getCount = async () => {
-    try {
-      const response = await axios.get(`${BASE_URL}/get/${namespace}/${key}`);
-      return response.data.value;
-    } catch (error) {
-      console.error('Error fetching count:', error);
-      return null;
-    }
-  };
-
-  const incrementCount = async () => {
-    try {
-      const response = await axios.get(`${BASE_URL}/hit/${namespace}/${key}`);
-      return response.data.value;
-    } catch (error) {
-      console.error('Error incrementing count:', error);
-      return null;
-    }
-  };
-
-  const [visitCount, setVisitCount] = useState(null)
-
-  useEffect(() => {
-    const trackVisit = async () => {
-      // Check if the user has already been counted in this session
-      const hasVisited = sessionStorage.getItem('hasVisited');
-      if (!hasVisited) {
-        const newCount = await incrementCount();
-        if (newCount !== null) {
-          setVisitCount(newCount);
-          sessionStorage.setItem('hasVisited', 'true');
-        } else {
-          const currentCount = await getCount();
-          setVisitCount(currentCount);
-        }
-      } else {
-        // Fetch the current count without incrementing
-        const currentCount = await getCount();
-        setVisitCount(currentCount);
-      }
-    };
-  
-    trackVisit();
-  }, []);
 
   useEffect(() => {
     const update = (time) => {
@@ -250,23 +199,6 @@ const App = () => {
                   <span className="text-secondary text-4xl md:text-3xl font-bold">Johin</span> 
                   <span className="text-4xl md:text-3xl font-bold">Johny</span>
                 </div>
-                <div className="absolute right-10 top-4">
-                {visitCount !== null ? (
-                  <div className="flex flex-col w-auto justify-center items-center border-[2px] px-3 border-yellow-500">
-                      <h1 className="font-semibold text-sm">Visitors</h1>
-                      <p>{visitCount}</p>
-                  </div>
-
-                ) : (
-                  <div className="flex flex-col w-auto justify-center items-center border-[2px] px-3 border-yellow-500">
-                    <h1 className="font-semibold text-sm">Visitors</h1>
-                    <p>0</p>
-                   </div>
-                )}
-
-                </div>
-
-
 
                 <div className="self-end inline-flex flex-col justify-end items-start h-full p-4 lg:pt-0 lg:pb-3 lg:pr-6">
                   <p className="text-xs">Born in </p>
