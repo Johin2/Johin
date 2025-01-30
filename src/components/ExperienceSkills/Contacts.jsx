@@ -17,8 +17,8 @@ const Contacts = () => {
             <h3 className="text-xl lg:text-xl">+91 9653650060</h3>
           </li>
           <li>
-            <h1 className="text-2xl font-semibold">Email</h1>
-            <p className="text-xl lg:text-3xl">Johinjohny144@gmail.com</p>
+            <h1 className="text-xl font-semibold">Email</h1>
+            <p className="text-xl lg:text-xl">Johinjohny144@gmail.com</p>
           </li>
         </ul>
       </div>
