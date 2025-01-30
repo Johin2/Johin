@@ -18,100 +18,117 @@ import flask from '../../assets/flask-svgrepo-com.svg';
 import Tailwindcss from '../../assets/tailwindcss-icon-svgrepo-com.svg';
 import git from '../../assets/git-svgrepo-com.svg';
 import github from '../../assets/github-fill-svgrepo-com.svg';
-
+import gcloud from '../../assets/google-cloud-svgrepo-com.svg';
+import neo4j from '../../assets/neo4j-icon.svg';
+import langchain from '../../assets/langchain-icon-seeklogo.svg';
 
 const Skills = () => {
     const skills = [
-        {
-          icon: Css,
-          name: "css",
-          info: "CSS 3"
-        },
-        {
-          icon: Python,
-          name: "python",
-          info: "Python"
-        },
-        {
-          icon: Html,
-          name: "html",
-          info: "HTML 5"
-        },
-        {
-          icon: Javascript,
-          name: "javascript",
-          info: "Javascript"
-        },
-        {
-          icon: Mongodb,
-          name: "mongodb",
-          info: "MongoDb"
-        },
-        {
-          icon: Keras,
-          name: "keras",
-          info: "Keras"
-        },
-        {
-          icon: TensorFlow,
-          name: "tensorflow",
-          info: "Tensorflow"
-        },
-        {
-          icon: Sql,
-          name: "sql",
-          info: "SQL Databases"
-        },
-        {
-          icon: Vscode,
-          name: "vscode",
-          info: "Vscode"
-        },
-        {
-          icon: Ubuntu,
-          name: "ubuntu",
-          info: "Ubuntu"
-        },
-        {
-          icon: Jupyter,
-          name: "jupyter",
-          info: "Jupyter"
-        },
-        {
-          icon: Tailwindcss,
-          name: "tailwindcss",
-          info: "Tailwindcss"
-        },
-        {
-          icon: flask,
-          name: "flask",
-          info: "Flask"
-        },
-        {
-          icon: PowerBI,
-          name: "powerbi",
-          info: "Power Bi"
-        },
-        {
-          icon: react,
-          name: "react",
-          info: "React.js"
-        },
-        {
-          icon: Tableau,
-          name: "tableau",
-          info: "Tableau"
-        },
-        {
-          icon: git,
-          name: "git",
-          info: "Git"
-        },
-        {
-          icon: github,
-          name: "github",
-          info: "Github"
-        },
+      {
+        icon: Css,
+        name: "css",
+        info: "CSS 3"
+      },
+      {
+        icon: Python,
+        name: "python",
+        info: "Python"
+      },
+      {
+        icon: Html,
+        name: "html",
+        info: "HTML 5"
+      },
+      {
+        icon: Javascript,
+        name: "javascript",
+        info: "Javascript"
+      },
+      {
+        icon: Mongodb,
+        name: "mongodb",
+        info: "MongoDb"
+      },
+      {
+        icon: Keras,
+        name: "keras",
+        info: "Keras"
+      },
+      {
+        icon: TensorFlow,
+        name: "tensorflow",
+        info: "Tensorflow"
+      },
+      {
+        icon: Sql,
+        name: "sql",
+        info: "SQL Databases"
+      },
+      {
+        icon: gcloud,
+        name: "gcloud",
+        info: "Google Cloud"
+      },
+      {
+        icon: Vscode,
+        name: "vscode",
+        info: "Vscode"
+      },
+      {
+        icon: Ubuntu,
+        name: "ubuntu",
+        info: "Ubuntu"
+      },
+      {
+        icon: Jupyter,
+        name: "jupyter",
+        info: "Jupyter"
+      },
+      {
+        icon: Tailwindcss,
+        name: "tailwindcss",
+        info: "Tailwindcss"
+      },
+      {
+        icon: flask,
+        name: "flask",
+        info: "Flask"
+      },
+      {
+        icon: PowerBI,
+        name: "powerbi",
+        info: "Power Bi"
+      },
+      {
+        icon: react,
+        name: "react",
+        info: "React.js"
+      },
+      {
+        icon: Tableau,
+        name: "tableau",
+        info: "Tableau"
+      },
+      {
+        icon: git,
+        name: "git",
+        info: "Git"
+      },
+      {
+        icon: github,
+        name: "github",
+        info: "Github"
+      },
+      {
+        icon: langchain,
+        name: "langchain",
+        info: "Langchain"
+      },
+      {
+        icon: neo4j,
+        name: "neo4j",
+        info: "Neo4j"
+      },
       ];
   return (
     <Boxes className="border-2 border-gray-600 rounded-md md:col-span-2 lg:col-span-4 lg:flex lg:w-full lg:h-full lg:flex-col overflow-y-scroll lg:overflow-hidden">

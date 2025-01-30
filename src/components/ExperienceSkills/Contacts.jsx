@@ -8,13 +8,13 @@ import instagram from '../../assets/icons8-instagram.svg'
 const Contacts = () => {
   return (
     <Boxes className="border-2 border-gray-600 rounded-md md:col-span-2 lg:col-span-4 bg-secondary text-primary">
-    <div className="flex flex-col md:flex-row justify-around">
-      <div className="m-5">
+    <div className="flex flex-col md:flex-row justify-between m-5">
+      <div>
         <h1 className="text-primary font-bold text-2xl lg:text-4xl mb-3">Contact Me</h1>
         <ul className="space-y-3">
           <li>
-            <h1 className="font-semibold text-2xl">Phone No.</h1>
-            <h3 className="text-xl lg:text-3xl">+91 9653650060</h3>
+            <h1 className="font-semibold text-xl">Phone No.</h1>
+            <h3 className="text-xl lg:text-xl">+91 9653650060</h3>
           </li>
           <li>
             <h1 className="text-2xl font-semibold">Email</h1>
@@ -22,12 +22,12 @@ const Contacts = () => {
           </li>
         </ul>
       </div>
-      <div className="ml-5 md:m-5">
-        <h1 className="font-bold text-2xl lg:text-4xl mb-3">Social handles</h1>
+      <div className="ml-5">
+        <h1 className="font-bold text-xl lg:text-4xl mb-3">Social handles</h1>
         <ul className="space-y-3 mb-3 flex flex-col">
-          <li><a href="https://github.com/Johin2" className="underline flex items-center lg:text-2xl font-semibold">Github <img src={github} alt="Github" className="size-12"/></a></li>
-          <li><a href="https://www.linkedin.com/in/johin/" className="underline flex items-center lg:text-2xl font-semibold">LinkedIn <img src={linkedin} alt="Linkedin logo" /></a></li>
-          <li><a href="https://www.instagram.com/johin_714/" className="underline flex items-center lg:text-2xl font-semibold">Instagram <img src={instagram} alt="Instagram" /></a></li>
+          <li><a href="https://github.com/Johin2" className="hover:underline flex items-center lg:text-2xl font-semibold">Github <img src={github} alt="Github" className="size-12"/></a></li>
+          <li><a href="https://www.linkedin.com/in/johin/" className="hover:underline flex items-center lg:text-2xl font-semibold">LinkedIn <img src={linkedin} alt="Linkedin logo" /></a></li>
+          <li><a href="https://www.instagram.com/johin_714/" className="hover:underline flex items-center lg:text-2xl font-semibold">Instagram <img src={instagram} alt="Instagram" /></a></li>
         </ul>
       </div>
     </div>
