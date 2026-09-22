@@ -1,27 +1,49 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTTSGYZYPK"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-VTTSGYZYPK');
+      // Load Google Analytics only in production (avoids local dev network lag and ad-blocker hangs)
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-VTTSGYZYPK';
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VTTSGYZYPK');
+      }
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Johin Johny · AI & Software Engineer. Building intelligent systems for retail, hospitality and luxury fashion." />
-    <meta name="theme-color" content="#0b0a08" />
+    <meta
+      name="description"
+      content="Johin Johny · AI Engineer & Software Builder. Shipping production AI systems, developer tools, and full-stack software products."
+    />
+    <meta name="author" content="Johin Johny" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
 
-    <link rel="icon" href="./src/assets/portfolio-favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johin2.github.io/Johin/" />
+    <meta property="og:title" content="Johin Johny · AI Engineer & Software Builder" />
+    <meta
+      property="og:description"
+      content="AI Engineer and software builder. Shipping production AI systems, developer tools, and full-stack software products."
+    />
 
-    <title>Johin Johny · AI & Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="/src/assets/portfolio-favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Johin Johny · AI Engineer &amp; Software Builder</title>
   </head>
-  <body>
+  <body class="bg-background text-foreground antialiased selection:bg-zinc-900 selection:text-white dark:selection:bg-zinc-100 dark:selection:text-zinc-900">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
