@@ -1,6 +1,6 @@
 const experiences = [
   {
-    period: 'Apr 2025 - Aug 2026',
+    period: 'May 2025 - Aug 2026',
     role: 'AI Developer',
     company: 'Glassbox Ventures',
     location: 'Mumbai, IN',
@@ -8,15 +8,16 @@ const experiences = [
     summary:
       'Led end-to-end development of full-stack data platforms and production AI systems for enterprise retail and hospitality clients.',
     achievements: [
-      'Architected and shipped production AI platforms serving 60+ retail stores and 14+ restaurant locations.',
-      'Reduced a 2-3 hour daily manual reconciliation workflow to 5 minutes, reducing error rates from 4% to <0.1%.',
-      'Integrated Claude, Qdrant vector search, and XGBoost predictive demand forecasting across live client interfaces.',
-      'Generated ~₹4.6L in enterprise project revenue on the automated reconciliation engine.',
+      'GBHunt: deployed a market-intelligence platform used daily by the business-development team that scrapes and LLM-classifies market signals (40,000+ records), with an 11-stage AI agent lifecycle drafting briefs, pitch decks and proposals behind human review gates.',
+      'Ainaa (ainaa.ai): engineered a luxury AI fashion e-commerce platform with a conversational stylist (Claude Agent SDK, SSE streaming, long-term memory, MCP tools) and semantic plus visual search using Qwen-3 embeddings, FashionCLIP and cross-encoder reranking.',
+      'The Souled Store: architected a payment reconciliation platform for 48+ retail stores, automating 40,000+ orders a month and cutting a 2-3 hour daily workflow to 5 minutes, with error rates down from 4% to <0.1%; generated ~₹2.4L in project revenue.',
+      "McDonald's (CPRL): built expansion whitespace intelligence for the North and East India franchisee, scraping 3,600+ competitor outlets across 8 brands, scoring areas with a Huff demand model calibrated by LightGBM, and adding a Gemini agent with 11 database tools.",
+      'The Kranti Cookbook: shipped a production RAG app with two-stage retrieval over a 199-recipe vector index, lifting Recall@1 from 88% to 97% at 0.984 MRR.',
     ],
-    stack: ['Next.js', 'FastAPI', 'PostgreSQL', 'Claude', 'Qdrant', 'XGBoost'],
+    stack: ['Next.js', 'FastAPI', 'PostgreSQL', 'Claude Agent SDK', 'Qdrant', 'LightGBM'],
   },
   {
-    period: 'May 2024 - Apr 2025',
+    period: 'May 2024 - May 2025',
     role: 'Software Developer Intern',
     company: 'Augle AI',
     location: 'Remote',
@@ -24,7 +25,7 @@ const experiences = [
     summary:
       'Engineered an end-to-end retrieval-augmented product chatbot with automated web scraping and vector retrieval.',
     achievements: [
-      'Scraped, parsed, and normalized 2,000+ heterogeneous product records using Scrapy spiders for LLM indexing.',
+      "Scraped, parsed, and normalized Beckhoff's industrial automation catalogue of 5,500+ products in 6 categories using Scrapy spiders for LLM indexing.",
       'Engineered prompt chains and PromptLayer telemetry traces to eliminate ungrounded hallucinations.',
       'Delivered a responsive React.js frontend interface with real-time product question-answering.',
     ],

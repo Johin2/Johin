@@ -27,7 +27,7 @@ export default function NowSection() {
                 Exploring
               </span>
               <p className="text-muted-foreground leading-relaxed">
-                Oracle Cloud Infrastructure (OCI), isolated browser sandboxes, Multi-Vector RAG, and GraphRAG.
+                C++ (currently learning), Oracle Cloud Infrastructure (OCI), isolated browser sandboxes, Multi-Vector RAG, and GraphRAG.
               </p>
             </div>
           </div>

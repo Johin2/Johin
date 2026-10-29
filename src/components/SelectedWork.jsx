@@ -40,29 +40,29 @@ const projects = [
     num: '02',
     category: 'Autonomous AI Agent',
     title: 'Askably',
-    headline: 'AI website customer support and sales agent powered by LangGraph.',
+    headline: 'White-label AI website support and sales agent with grounded, cited answers.',
     summary:
       'Conversational AI agent that embeds directly on websites, learns proprietary company knowledge, answers customer questions with source-grounded citations, and captures qualified leads.',
     image: askablyImg,
     alt: 'Askably live homepage interface and embedded assistant preview',
     badge: 'Production AI Agent',
     specs: [
-      { label: 'Agent Architecture', value: 'LangGraph Stateful Cycles' },
-      { label: 'Vector Retrieval', value: 'Semantic Embeddings in Qdrant' },
+      { label: 'Agent Architecture', value: 'LangChain, multi-vendor LLMs' },
+      { label: 'Vector Retrieval', value: 'pgvector HNSW + full-text (RRF)' },
       { label: 'Cloud Platform', value: 'Oracle Cloud Infrastructure (OCI)' },
-      { label: 'Deployment', value: 'Single-line Embed Script (3.2 KB)' },
+      { label: 'Deployment', value: 'Single-line Embed Script (3.7 KB gzipped)' },
     ],
     caseStudy: {
       problem:
         'Traditional website chatbots rely on rigid decision trees that frustrate visitors, while raw LLMs frequently hallucinate unverified claims or fail to capture high-intent customer enquiries.',
       approach:
-        'Constructed an agentic pipeline using LangChain and LangGraph that ingests business documents, computes high-dimensional dense embeddings, grounds answers with verifiable citations, and hands off to human teams.',
+        'Constructed a LangChain pipeline that ingests business documents, computes high-dimensional dense embeddings, grounds answers with verifiable citations, and hands off to human teams.',
       engineering:
-        'Orchestrated a cyclical LangGraph state machine (query classification, semantic chunk lookup, citation validation, and fallback forms) hosted on Oracle Cloud (OCI) with Server-Sent Events (SSE) streaming and Qdrant vector isolation.',
+        'Engineered hybrid retrieval (pgvector HNSW and full-text search fused with Reciprocal Rank Fusion), a grounding gate that refuses off-topic questions at zero token cost, and a semantic cache serving repeats in 12ms, hosted on Oracle Cloud (OCI) with Server-Sent Events (SSE) streaming.',
       result:
         'Autonomous customer resolution with document-level traceability, zero hallucinated claims, and instant lead notifications emailed directly to founders.',
     },
-    stack: ['LangGraph', 'LangChain', 'FastAPI', 'Qdrant', 'Oracle Cloud (OCI)', 'Next.js'],
+    stack: ['LangChain', 'FastAPI', 'PostgreSQL + pgvector', 'Redis', 'Oracle Cloud (OCI)', 'Next.js'],
     links: [
       { label: 'Product Architecture', href: '#askably' },
     ],

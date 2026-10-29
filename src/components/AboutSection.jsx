@@ -83,7 +83,7 @@ export default function AboutSection() {
                 rendering, token-efficient self-correction loops, and high-performance relational databases.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base">
-                Previously, I was an AI Developer at <strong className="text-foreground font-semibold">Glassbox Ventures</strong> (Apr 2025 - Aug 2026),
+                Previously, I was an AI Developer at <strong className="text-foreground font-semibold">Glassbox Ventures</strong> (May 2025 - Aug 2026),
                 shipping commercial platforms across retail reconciliation, restaurant analytics, and luxury fashion commerce.
                 Independently, I build developer tools like <strong className="text-foreground font-semibold">PDFPipe</strong>,
                 privacy-first software like <strong className="text-foreground font-semibold">ToolBox</strong>,

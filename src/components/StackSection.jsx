@@ -4,10 +4,10 @@ const stackGroups = [
     description: 'Models, vector retrieval, embeddings, and inference orchestration in production.',
     items: [
       { name: 'LLM APIs & Agents', detail: 'Claude (Anthropic), OpenAI, Gemini' },
-      { name: 'Vector Search', detail: 'Qdrant, FAISS, dense embedding retrieval' },
+      { name: 'Vector Search', detail: 'Qdrant, pgvector, Pinecone, FAISS, hybrid retrieval' },
       { name: 'RAG Architecture', detail: 'LangChain, hybrid search, context truncation' },
       { name: 'Multimodal & Embeddings', detail: 'FashionCLIP, Qwen embeddings, cosine ranking' },
-      { name: 'Machine Learning', detail: 'XGBoost, TensorFlow, Keras, scikit-learn' },
+      { name: 'Machine Learning', detail: 'LightGBM, TensorFlow, Keras, scikit-learn' },
     ],
   },
   {
