@@ -80,7 +80,7 @@ const projects = [
     badge: 'Open Web Software',
     specs: [
       { label: 'Free Utilities', value: '177 Browser Tools' },
-      { label: 'Monthly Visitors', value: '~1,000 Organic' },
+      { label: 'Monthly Visitors', value: '5,000+ (1,200+ Organic)' },
       { label: 'Server Data', value: '0 Bytes Collected' },
       { label: 'Cloud & Edge', value: 'Cloudflare Pages + OCI' },
     ],
@@ -92,7 +92,7 @@ const projects = [
       engineering:
         'Leveraged WebGPU and WebAssembly with edge deployment on Cloudflare Pages, backed by Oracle Cloud Infrastructure (OCI) instances for build pipelines, worker tasks, and asset delivery.',
       result:
-        'About 1,000 organic visitors a month, with zero server data collection and high client-side responsiveness.',
+        '5,000+ monthly visitors, 1,200+ from organic search, at zero paid spend and with zero server data collection.',
     },
     stack: ['Next.js', 'TypeScript', 'WebLLM', 'WebGPU', 'Oracle Cloud (OCI)', 'Cloudflare'],
     links: [
