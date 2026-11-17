@@ -61,8 +61,8 @@ export default function AboutSection() {
                 <span className="font-medium text-foreground">9.3 / 10</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">arXiv Publication</span>
-                <span className="font-medium text-foreground">Sole Author (2026)</span>
+                <span className="text-muted-foreground">arXiv Publications</span>
+                <span className="font-medium text-foreground">3 papers (2026)</span>
               </div>
             </div>
           </div>
@@ -72,10 +72,11 @@ export default function AboutSection() {
             {/* Direct Engineering Narrative */}
             <div className="space-y-5 text-base sm:text-lg text-foreground/90 leading-relaxed font-sans">
               <p>
-                I am an AI engineer and software builder based in Mumbai. I spend my time
-                designing, building, and deploying software systems across the stack: from
-                low-latency LLM agent loops and multi-tenant RAG retrieval to high-throughput
-                developer APIs and operational dashboards.
+                I am the co-founder and CEO of Havon AI, based in Mumbai. We build AI for Indian
+                languages from the ground up: a tokenizer that needs fewer tokens than GPT-4o on every
+                language of India, our own language models trained from scratch, and Hindi and Marathi
+                search. I also design, build and deploy software across the stack, from LLM agent loops
+                and RAG retrieval to developer APIs.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base">
                 Rather than treating AI as isolated prompt demos, I focus on what makes AI systems
@@ -87,7 +88,7 @@ export default function AboutSection() {
                 shipping commercial platforms across retail reconciliation, restaurant analytics, and luxury fashion commerce.
                 Independently, I build developer tools like <strong className="text-foreground font-semibold">PDFPipe</strong>,
                 privacy-first software like <strong className="text-foreground font-semibold">ToolBox</strong>,
-                and publish empirical research on LLM self-repair.
+                and published empirical research on LLM self-repair.
               </p>
             </div>
 

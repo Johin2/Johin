@@ -72,15 +72,15 @@ const projects = [
     num: '03',
     category: 'Privacy-First SaaS',
     title: 'ToolBox',
-    headline: '165+ free browser-based developer and designer tools.',
+    headline: '177 free browser-based developer and designer tools.',
     summary:
       'A privacy-first suite of client-side developer utilities. Every computation runs 100% in the browser with zero server data collection. Pro tier incorporates on-device AI via WebLLM and WebGPU.',
     image: toolboxImg,
     alt: 'ToolBox web interface showing in-browser developer utilities',
     badge: 'Open Web Software',
     specs: [
-      { label: 'Free Utilities', value: '165+ Browser Tools' },
-      { label: 'Monthly Visitors', value: '2,000+ Active Users' },
+      { label: 'Free Utilities', value: '177 Browser Tools' },
+      { label: 'Monthly Visitors', value: '~1,000 Organic' },
       { label: 'Server Data', value: '0 Bytes Collected' },
       { label: 'Cloud & Edge', value: 'Cloudflare Pages + OCI' },
     ],
@@ -92,7 +92,7 @@ const projects = [
       engineering:
         'Leveraged WebGPU and WebAssembly with edge deployment on Cloudflare Pages, backed by Oracle Cloud Infrastructure (OCI) instances for build pipelines, worker tasks, and asset delivery.',
       result:
-        'Active organic user base of 2,000+ monthly developers with zero server data collection and high client-side responsiveness.',
+        'About 1,000 organic visitors a month, with zero server data collection and high client-side responsiveness.',
     },
     stack: ['Next.js', 'TypeScript', 'WebLLM', 'WebGPU', 'Oracle Cloud (OCI)', 'Cloudflare'],
     links: [

@@ -16,9 +16,11 @@ export default function NowSection() {
                 Building
               </span>
               <p className="text-foreground leading-relaxed">
-                <span className="font-medium text-foreground">PDFPipe</span> (developer PDF generation infrastructure),{' '}
-                <span className="font-medium text-foreground">Askably</span> (autonomous AI website support and sales agent), and{' '}
-                <span className="font-medium text-foreground">Havon</span>.
+                <span className="font-medium text-foreground">Havon AI</span>: a 1B-parameter Hindi, Marathi and
+                English model trained from scratch (in progress) and a Hindi/Marathi search embedding model; plus{' '}
+                <span className="font-medium text-foreground">PDFPipe</span>,{' '}
+                <span className="font-medium text-foreground">Askably</span> and{' '}
+                <span className="font-medium text-foreground">ToolBox</span>.
               </p>
             </div>
 
@@ -27,7 +29,8 @@ export default function NowSection() {
                 Exploring
               </span>
               <p className="text-muted-foreground leading-relaxed">
-                C++ (currently learning), Oracle Cloud Infrastructure (OCI), isolated browser sandboxes, Multi-Vector RAG, and GraphRAG.
+                Training models on TPUs, tokenizers for Indian languages, Indian-language benchmarks (romanised and
+                code-mixed text), and C++ (currently learning).
               </p>
             </div>
           </div>

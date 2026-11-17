@@ -1,5 +1,21 @@
 const experiences = [
   {
+    period: '2026 - Present',
+    role: 'Co-founder & CEO',
+    company: 'Havon AI',
+    location: 'Mumbai, IN',
+    current: true,
+    summary:
+      'Co-founded Havon AI with Ankur Ashit Ghosh and Shervin Sam to build AI for Indian languages, from the tokenizer up.',
+    achievements: [
+      'Published two papers on arXiv (Nov 2026): The Indic Token Tax in 2026, measuring how much more Indian languages cost on public tokenizers (Hindi 1.57x and Odia 5.01x the tokens of English on GPT-4o), and a multi-word tokenizer that needs fewer tokens than GPT-4o on all 25 languages of India and 6.1% fewer on English.',
+      'Training a 1B-parameter Hindi, Marathi and English language model from scratch on our own tokenizer, on spot cloud TPUs with automatic checkpoint-and-resume.',
+      'Building a Hindi and Marathi search embedding model, trained with distillation and contamination-checked training data.',
+      'Built and run the products ToolBox (177 browser-first developer tools), PDFPipe (programmatic PDF generation) and Askably (a website answering agent with cited sources).',
+    ],
+    stack: ['JAX', 'PyTorch', 'Cloud TPU', 'Hugging Face', 'Next.js', 'FastAPI'],
+  },
+  {
     period: 'May 2025 - Aug 2026',
     role: 'AI Developer',
     company: 'Glassbox Ventures',
